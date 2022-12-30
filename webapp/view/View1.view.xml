@@ -1,0 +1,37 @@
+<mvc:View controllerName="idb.project1.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:f="sap.f" xmlns:layout="sap.ui.layout" height="100%">
+    <Page id="page" title="{i18n>title}">
+        <!-- <f:DynamicPage id="dynamicPageId" preserveHeaderStateOnScroll="true" headerExpanded="{/headerExpanded}"> -->
+        <!-- <f:header>
+       		<f:DynamicPageHeader pinnable="true">
+		<VBox class="sapUiSmallMargin">
+		<ndc:BarcodeScannerButton
+			id="sampleBarcodeScannerButton"
+			scanSuccess="onScanSuccess"
+			scanFail="onScanError"
+			inputLiveUpdate="onScanLiveupdate"
+			dialogTitle="Barcode Scanner Button Sample"
+		/>
+		<HBox class="sapUiTinyMarginTop">
+			<Label text="Scan Result:"/>
+			<Text id="sampleBarcodeScannerResult" text="" class="sapUiTinyMarginBegin"/>
+		</HBox>
+	</VBox>
+		</f:DynamicPageHeader >
+		</f:header> -->
+        <f:DynamicPage id="dynamicPageId" preserveHeaderStateOnScroll="true">
+            <!-- DynamicPage Title -->
+            <f:title>
+                <f:DynamicPageTitle />
+            </f:title>
+
+            <!-- DynamicPage Header -->
+            <f:header>
+                <f:DynamicPageHeader pinnable="true">
+                    <FlexBox alignItems="Start" justifyContent="Center">
+                        <Button text="Show Details - Text" press=".onShowTextInfo" width="250px" class="sapUiSmallMarginBottom" ariaHasPopup="Dialog" />
+                    </FlexBox>
+                </f:DynamicPageHeader>
+            </f:header>
+        </f:DynamicPage>
+    </Page>
+</mvc:View>
